@@ -53,7 +53,9 @@
             <h2 class="section-title">Tentang SDN 3 Kalimanggis</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="SDN 3 Kalimanggis">
+                    <!-- PERBAIKAN: Tambahkan fallback untuk gambar -->
+                    <img src="unnamed.jpg" alt="SDN 3 Kalimanggis" 
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'; this.alt='Gambar SDN 3 Kalimanggis tidak tersedia';">
                 </div>
                 <div class="about-text">
                     <h3>Sekolah Berbasis Karakter dan Akademik</h3>
@@ -208,7 +210,7 @@
                             <p>Sabtu: 07.00 - 12.00 WIB</p>
                         </div>
                     </div>
-            </div>
+                </div> <!-- TUTUP DIV contact-info yang sebelumnya kurang -->
                 
                 <div class="contact-form">
                     <h3>Kirim Pesan</h3>
@@ -261,15 +263,22 @@
                 </div>
                 
                 <div class="footer-social">
-    <h4>Media Sosial</h4>
-    <div class="social-icons">
-        <!-- Link Instagram yang bisa diklik -->
-        <a href="https://www.instagram.com/sdnegeritigakalimanggis?igsh=MXM3Ynlubmk3a3V1ag==" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-instagram"></i>
-        </a>
-    </div>
-    <p>Ikuti kami di media sosial untuk informasi terbaru</p>
-</div>
+                    <h4>Media Sosial</h4>
+                    <div class="social-icons">
+                        <!-- Link Instagram yang bisa diklik -->
+                        <a href="https://www.instagram.com/sdnegeritigakalimanggis?igsh=MXM3Ynlubmk3a3V1ag==" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p>Ikuti kami di media sosial untuk informasi terbaru</p>
+                </div>
+            </div>
+            
+            <!-- TAMBAHKAN FOOTER BOTTOM untuk copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2023 SDN 3 Kalimanggis Kaloran, Temanggung. Hak Cipta Dilindungi.</p>
+                <p>Website Resmi Sekolah Dasar Negeri 3 Kalimanggis</p>
+            </div>
         </div>
     </footer>
 
