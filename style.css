@@ -971,10 +971,9 @@ body {
     to { transform: rotate(360deg); }
 }
 
-/* Required field indicator */
+/* HAPUS BINTANG DARI LABEL FORM - PERUBAHAN PENTING */
 .form-group label::after {
-    content: ' *';
-    color: #e74c3c;
+    content: '' !important; /* UBAH DARI ' *' MENJADI '' */
 }
 
 /* Responsive spacing untuk section contact */
@@ -1080,9 +1079,21 @@ body {
 
 /* Required field message */
 .form-required-note {
-    font-size: 12px;
+    font-size: 13px;
     color: #7f8c8d;
     text-align: center;
     margin-top: 15px;
     display: block;
+    font-style: italic;
+}
+
+/* Tambahan untuk memastikan tidak ada bintang */
+.form-group label {
+    position: relative;
+}
+
+.form-group label::before,
+.form-group label::after {
+    display: none !important;
+    content: '' !important;
 }
