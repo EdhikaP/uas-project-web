@@ -212,35 +212,52 @@
                     </div>
                 </div> <!-- TUTUP DIV contact-info yang sebelumnya kurang -->
                 
-                <div class="contact-form">
-                    <h3>Kirim Pesan</h3>
-                    <form id="messageForm">
-                        <div class="form-group">
-                            <label for="name">Nama Lengkap</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subjek</label>
-                            <input type="text" id="subject" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Pesan</label>
-                            <textarea id="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn-submit">Kirim Pesan</button>
-                    </form>
-                </div>
+                <div class="contact-form-container">
+    <div class="contact-form">
+        <h3>Kirim Pesan</h3>
+        <form id="messageForm">
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" required 
+                       placeholder="Masukkan nama lengkap"
+                       aria-label="Nama lengkap"
+                       aria-required="true">
             </div>
-        </div>
-    </section>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required 
+                       placeholder="contoh@email.com"
+                       aria-label="Alamat email"
+                       aria-required="true"
+                       inputmode="email">
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subjek</label>
+                <input type="text" id="subject" required 
+                       placeholder="Subjek pesan"
+                       aria-label="Subjek pesan"
+                       aria-required="true">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" rows="4" required 
+                          placeholder="Tulis pesan Anda di sini..."
+                          aria-label="Isi pesan"
+                          aria-required="true"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit" aria-label="Kirim pesan">
+                <i class="fas fa-paper-plane" style="margin-right: 8px;"></i>
+                Kirim Pesan
+            </button>
+            
+            <span class="form-required-note">* Semua field wajib diisi</span>
+        </form>
+    </div>
+</div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -274,11 +291,7 @@
                 </div>
             </div>
             
-            <!-- TAMBAHKAN FOOTER BOTTOM untuk copyright -->
-            <div class="footer-bottom">
-                <p>&copy; 2023 SDN 3 Kalimanggis Kaloran, Temanggung. Hak Cipta Dilindungi.</p>
-                <p>Website Resmi Sekolah Dasar Negeri 3 Kalimanggis</p>
-            </div>
+            
         </div>
     </footer>
 
